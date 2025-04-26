@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/46/cd/71/46cd7135bfa11d9da8a252fd09899af8.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff7b00;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e06600;
+}
+
+.section {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
